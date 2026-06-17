@@ -40,6 +40,33 @@
     padding-left: 8px;
 }
 
+.recommendations{
+  margin-top: 4rem;
+}
+
+.recommendation-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.recommendation-column h3{
+  color: var(--accent-red);
+  margin-bottom: 1rem;
+}
+
+.recommendation-column ul{
+  list-style: none;
+  padding: 0;
+}
+
+.recommendation-column li{
+  padding: 0.4rem 0;
+  color: var(--text-secondary);
+}
+
 body {
   font-family: "JetBrains Mono", monospace;
   background-color: var(--bg-primary);
@@ -64,7 +91,7 @@ h1{
 /* Additional code so that site layout does not break on mobile. */
 @media(max-width: 800px){
   body{
-    grid-template-columns: 1fr;
+    grid-template-columns: 140px 1fr;
   }
 
   .sidebar{
