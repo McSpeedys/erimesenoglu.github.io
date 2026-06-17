@@ -61,3 +61,18 @@ h1{
   text-align: center;
 }
 
+/* Additional code so that site layout does not break on mobile. */
+@media(max-width: 800px){
+  body{
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar{
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+
+  main{
+    padding: 1.5rem;
+  }
+}
